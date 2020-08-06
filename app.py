@@ -52,8 +52,7 @@ def executeWorkflow(appID, wfID):
               startExecution(input: { \
                 applicationId: \"" + appID + "\" \
                 entityId: \"" + wfID + "\" \
-                executionType: WORKFLOW, " \
-            + BODY +
+                executionType: WORKFLOW, " + BODY + \
               "} \
               ){ \
                 clientMutationId \
