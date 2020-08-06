@@ -58,6 +58,4 @@ steps:
             buildNumber: "v6"
       artifactSourceName: "luisredda_microservice"
           }
-        }
-      }
-  ]
+        }}  ]
