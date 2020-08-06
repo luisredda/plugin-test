@@ -27,7 +27,7 @@ steps:
     apikey: 
       from_secret: harness_secret
     body: |
-      "
+      
             variableInputs: [ 
       { 
         name: "Environment" 
@@ -61,4 +61,4 @@ steps:
           }
         }
       }
-  ]"
+  ]
