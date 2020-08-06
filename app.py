@@ -48,7 +48,7 @@ def getWfByName(AppID, WFName):
     return(WFID)
 
  def executeWorkflow(appID, wfID):
-     pload = "mutation { \
+    pload = "mutation { \
               startExecution(input: { \
                 applicationId: \"" + appID + "\" \
                 entityId: \"" + wfID + "\" \
@@ -63,11 +63,11 @@ def getWfByName(AppID, WFName):
                 } \
               } \
             }"
-            
+
     response = requests.post(URL, headers={'x-api-key': API_KEY}, data=pload)
     json_response = response.json()
     print(json_response)
-    
+
 AppID = (getAppByName(APPLICATION_NAME))
-WfID = (getWfByName(AppID, WORKFLOW_NAME)
+WfID = getWfByName(AppID, WORKFLOW_NAME)
 executeWorkflow(AppID, WfID)
