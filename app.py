@@ -69,5 +69,5 @@ def getWfByName(AppID, WFName):
     print(json_response)
     
 AppID = (getAppByName(APPLICATION_NAME))
-WfID = getWfByName(AppID, WORKFLOW_NAME)
+WfID = (getWfByName(AppID, WORKFLOW_NAME)
 executeWorkflow(AppID, WfID)
