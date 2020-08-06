@@ -36,7 +36,7 @@ steps:
         }
       },
       {
-        name: "InfraDefinition_KUBERNETES"
+        name: "InfraDefinition_Kubernetes"
         variableValue: {
           type: NAME
           value: "k8s dev"
