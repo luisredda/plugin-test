@@ -56,7 +56,7 @@ steps:
         artifactValueInput: {
           valueType: BUILD_NUMBER
           buildNumber: {
-            buildNumber: ${DRONE_TAG}
+            buildNumber: $${DRONE_TAG}
       artifactSourceName: "luisredda_microservice"
           }
         }}  ]
