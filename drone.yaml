@@ -1,6 +1,6 @@
 kind: pipeline
 name: default
-
+  
 steps:
 - name: build
   image: python
@@ -17,11 +17,12 @@ steps:
     auto_tag: true
 - name: harness-deploy
   image: luisredda/test-plugin
+  environment:
+    service: "search"
+    build: ${DRONE_TAG}
   settings:  
     application: "Ecommerce"
     pipeline: "Deploy to K8s"
-    service: "search"
-    build: "v6"
     accountid:
       from_secret: harness_acctid
     apikey: 
