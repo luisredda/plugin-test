@@ -52,7 +52,7 @@ steps:
       }
       ], 
       serviceInputs: [ {
-        name: "${service}", 
+        name: ${service}, 
         artifactValueInput: {
           valueType: BUILD_NUMBER
           buildNumber: {
