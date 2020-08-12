@@ -47,7 +47,7 @@ steps:
         name: "Service"
         variableValue: {
           type: NAME
-          value: "$${service}"
+          value: $${service}
         }
       }
       ], 
@@ -56,7 +56,7 @@ steps:
         artifactValueInput: {
           valueType: BUILD_NUMBER
           buildNumber: {
-            buildNumber: ${build}
+            buildNumber: ${DRONE_TAG}
       artifactSourceName: "luisredda_microservice"
           }
         }}  ]
