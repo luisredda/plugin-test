@@ -48,6 +48,7 @@ def getWfByName(AppID, WFName):
     return(WFID)
 
 def executeWorkflow(appID, wfID):
+    print(BODY)
     pload = "mutation { \
               startExecution(input: { \
                 applicationId: \"" + appID + "\" \
