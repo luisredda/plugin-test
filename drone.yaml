@@ -59,6 +59,6 @@ steps:
       artifactSourceName: "luisredda_microservice"
           }
         }}  ]
-trigger:
-  event:
-  - promote
+  when:
+    event:
+    - promote
