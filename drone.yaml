@@ -18,8 +18,8 @@ steps:
 - name: harness-deploy
   image: luisredda/test-plugin
   environment:
-    service: "search"
-    build: ${DRONE_TAG}
+    - service: "search"
+    - build: ${DRONE_TAG}
   settings:  
     application: "Ecommerce"
     pipeline: "Deploy to K8s"
